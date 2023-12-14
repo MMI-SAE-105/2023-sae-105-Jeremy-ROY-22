@@ -15,3 +15,6 @@
 /* font */
 
 @import "/src/fonts/font.css";
+
+/* main */
+@import "/src/css/base/main.css";
