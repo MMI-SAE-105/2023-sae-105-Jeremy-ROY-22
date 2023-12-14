@@ -7,11 +7,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 10px;
+    padding:  5px 10px 5px 15px ;
 }
 
-.header__site{
+.header__site, .menu__site{
     color: var(--blanc-gris);
     font-family: var(--font-titre);
     font-size: var(--site-header);

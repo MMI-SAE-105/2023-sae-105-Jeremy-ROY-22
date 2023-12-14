@@ -10,10 +10,15 @@
     transition: right 0.5s;
 }
 
-.menu__croix {
-    align-self: flex-end;
-    height: 50px;
-    padding-right: 10px;
+.menu__haut {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  5px 10px 5px 15px ;
+
 }
 
 .actif{
@@ -26,8 +31,32 @@ nav > ul > li{
 
 nav > ul > li > a {
     list-style: none;  
+    color: var(--blanc-gris);
+    font-family: var(--font-titre);
 }
 
 .menu__liste{
+    padding-top: 10px;
+    padding-left: 0;
+}
 
+.menu__principal{
+    font-size: var(--menu-h1);
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+
+.menu__liste--ligne{
+    color: white;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 120px;
+}
+
+.menu__ancre{
+    font-size: var(--menu-h2);
+    padding-left: 80px;
+    padding-bottom: 10px;
 }
