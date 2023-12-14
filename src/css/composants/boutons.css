@@ -1,0 +1,21 @@
+.bloc__btn{
+    background-color: var(--bleu-clair);
+    color: var(--gris);
+    font-family: var(--font-texte);
+    font-size: var(--texte-page);
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.bloc__accordeon--btn, .carrousel__ecran--btn{
+    border: none;
+    background: none;
+    background-color: var(--bleu-foncé);
+    color: var(--blanc-gris);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
