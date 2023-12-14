@@ -3,5 +3,8 @@ body{
     font-size: var(--texte-page);
     color: var(--gris);
     background-color: var(--bleu-foncé);
-    
+}
+
+a{
+    text-decoration: none;
 }

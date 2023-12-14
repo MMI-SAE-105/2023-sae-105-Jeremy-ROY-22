@@ -1,0 +1,21 @@
+.header {
+    background-color: var(--noir-header);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header__site{
+    color: var(--blanc-gris);
+    font-family: var(--font-titre);
+    font-size: var(--site-header);
+    text-decoration: none;
+}
+
+.header__site--nom{
+    color: var(--blanc-gris);
+}
