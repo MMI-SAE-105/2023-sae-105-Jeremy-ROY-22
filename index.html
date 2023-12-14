@@ -24,12 +24,14 @@
                     class="header__menu--icone"
                     src="/public/icones/menu.svg"  
                     alt="logo menu burger"
+                    @click="expanded = ! expanded">
                 >
-                <nav class="header__menu menu">
+                <nav class="header__menu menu" :class="{actif: expanded}">
                     <img 
                         class="menu__croix" 
                         src="/public/icones/croix.svg" 
-                        alt="icone croix fermeture menu">
+                        alt="icone croix fermeture menu"
+                        @click="expanded = ! expanded">
 
                     <ul class="menu__liste">
                         <li class="menu__item">
