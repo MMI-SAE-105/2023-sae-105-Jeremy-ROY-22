@@ -7,8 +7,7 @@
         <link rel="stylesheet" href="/src/styles.css" />
         <script src="https://unpkg.com/alpinejs" defer></script>
     </head>
-    <body>
-
+    <body x-data="{expanded: false}">
 
         <header class="header">
             <div class="header__site">
@@ -23,12 +22,13 @@
                     class="header__menu--icone"
                     src="/public/icones/menu.svg"  
                     alt="logo menu burger"
-                >
-                <nav class="header__menu menu">
+                    @click="expanded = ! expanded">
+                <nav class="header__menu menu" :class="{actif: expanded}">
                     <img 
                         class="menu__croix" 
                         src="/public/icones/croix.svg" 
-                        alt="icone croix fermeture menu">
+                        alt="icone croix fermeture menu"
+                        @click="expanded = ! expanded">
 
                     <ul class="menu__liste">
                         <li class="menu__item">
