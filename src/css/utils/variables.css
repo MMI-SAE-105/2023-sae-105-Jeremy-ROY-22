@@ -17,5 +17,7 @@
     --footer-liens: 35px;
     --description-texte: 8px;
 
-    
+    /* polices */
+    --font-titres: "iceberg", sans-serif;
+    --font-texte: "comfortaa", sans-serif;
 }
