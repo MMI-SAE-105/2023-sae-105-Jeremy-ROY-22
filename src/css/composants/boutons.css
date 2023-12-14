@@ -20,6 +20,16 @@
     border-radius: 5px;
 }
 
+.bloc__accordeon{
+    margin-top: 0;
+}
+
 .bloc__accordeon--btn{
     margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.bloc__accordeon--item{
+    list-style: none;
+    margin: 0;
 }
