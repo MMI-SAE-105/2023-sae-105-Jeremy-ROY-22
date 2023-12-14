@@ -6,7 +6,9 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
 .header__site{
@@ -18,4 +20,8 @@
 
 .header__site--nom{
     color: var(--blanc-gris);
+}
+
+.main__header--image{
+    max-width: 100%;
 }
