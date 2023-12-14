@@ -7,8 +7,15 @@
     --blanc-forl: #D9D9D9, 0.6;
     --noir-header: #000000, 0.8;
 
+    /* tailles de polices */
+    --site-header: 32px;
+    --titre-article: 48px;
+    --texte-page: 16px;
+    --texte-h1: 20px;
+    --menu-h1: 40px;
+    --menu-h2: 35px;
+    --footer-liens: 35px;
+    --description-texte: 8px;
+
     
-
-
-
 }
