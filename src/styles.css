@@ -18,3 +18,7 @@
 
 /* main */
 @import "/src/css/base/main.css";
+
+/* composants */
+@import "/src/css/composants/blocs.css";
+@import "/src/css/composants/boutons.css";
