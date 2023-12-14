@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Andreu Vision</title>
         <link rel="stylesheet" href="/src/styles.css" />
-        <script src="https://unpkg.com/alpinejs" defer></script>
-    </head>
+        <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>    </head>
     <body x-data="{expanded: false}">
 
         <header class="header">
@@ -164,11 +164,11 @@
                     Fondation Cartier Pass : 18€ - 50€ <br>
                     Gratuit pour :
                 </p>
-                <section class="bloc__accordeon">
-                    <button class="bloc__accordeon--btn">
+                <section class="bloc__accordeon" x-data="{expanded: false }">
+                    <button class="bloc__accordeon--btn" @click="expanded = ! expanded">
                         Voir la liste
                     </button>
-                    <div class="bloc__accordeon accordeon">
+                    <div class="bloc__accordeon accordeon" x-show="expanded" x-collapse.duration.500ms>
                         <ul class="bloc__accordeon">
                             <li class="bloc__accordeon--item">
                                 Les - de 13 ans
@@ -194,9 +194,9 @@
                         </ul>
                     </div>
                 </section>
-                    <a href="https://fondation-cartier.tickeasy.com/fr-FR/accueil" class="bloc__btn">
-                        Billetterie
-                    </a>
+                <a href="https://fondation-cartier.tickeasy.com/fr-FR/accueil" class="bloc__btn">
+                    Billetterie
+                </a>
             </article>
             
         </main>
