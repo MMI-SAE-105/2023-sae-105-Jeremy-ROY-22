@@ -5,6 +5,25 @@ body{
     background-color: var(--bleu-foncé);
 }
 
+.main{
+  color: var(--blanc-gris);
+}
+
+.main__header--image{
+  z-index: 1;
+  filter: blur(2px);
+}
+
+.main__header--titre{
+  display: block;
+  position: relative;
+  font-family: var(--font-titre);
+  font-size: var(--titre-article);
+  justify-content: center;
+  text-align: center;
+  top: -120px;
+}
+
 a{
     text-decoration: none;
 }
