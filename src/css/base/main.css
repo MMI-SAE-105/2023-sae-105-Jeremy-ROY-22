@@ -1,12 +1,11 @@
 body{
     font-family: var(--font-texte);
     font-size: var(--texte-page);
-    color: var(--gris);
     background-color: var(--bleu-foncé);
 }
 
 .main{
-  color: var(--blanc-gris);
+  color: var(--gris);
 }
 
 .main__header--image{
@@ -19,6 +18,7 @@ body{
   position: relative;
   font-family: var(--font-titre);
   font-size: var(--titre-article);
+  color: var(--blanc-gris);
   justify-content: center;
   text-align: center;
   top: -120px;
