@@ -6,6 +6,7 @@ body{
 
 .main{
   color: var(--gris);
+  margin-bottom: 20px;
 }
 
 .main__header--image{
