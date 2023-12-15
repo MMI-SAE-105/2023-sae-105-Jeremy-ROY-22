@@ -1,0 +1,62 @@
+.fig__img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrousel__parent--ecrans{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    align-items: center;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 2rem;
+    max-width: 300px;
+}
+
+.carrousel__ecran{
+    width: 100%;
+    height: 360px;
+    flex: none;
+    scroll-snap-align: center;
+
+}
+
+
+.carrousel__ecran figure{
+    margin: 0;
+    margin-left: 20px;
+
+}
+
+.carrousel{
+    position: relative;
+}
+
+/* boutons */
+
+.carrousel{
+    position: relative;
+}
+
+.carrousel__btn{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+.carrousel__btn--avant{
+    left: 8;
+}
+
+.carrousel__btn--apres{
+    right: 8;
+}
+
+
