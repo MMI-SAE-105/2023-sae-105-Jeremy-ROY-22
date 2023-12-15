@@ -46,6 +46,7 @@ body{
 
 .carrousel__btn{
     position: absolute;
+    border: none;
     top: 30%;
     transform: translateY(-50%);
     width: 2rem;
@@ -54,7 +55,6 @@ body{
 
     background-color: var(--bleu-foncé);
     border-radius: 50%;
-    border: 1px solid var(--blanc-gris);
     color: var(--blanc-gris);
     place-content: center;
     

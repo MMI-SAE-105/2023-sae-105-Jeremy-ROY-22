@@ -25,3 +25,7 @@
 .main__header--image{
     max-width: 100%;
 }
+
+.main__header{
+    height: 320px;
+}
