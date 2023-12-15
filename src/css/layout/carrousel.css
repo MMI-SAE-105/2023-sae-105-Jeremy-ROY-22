@@ -16,7 +16,7 @@ body{
     align-items: center;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    max-width: 300px;
+    max-width: 310px;
 }
 
 .carrousel__ecran{
@@ -30,7 +30,7 @@ body{
 
 .carrousel__ecran figure{
     margin: 0;
-    margin-left: 30px;
+    margin-left: 20px;
 
 }
 
