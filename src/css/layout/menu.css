@@ -45,6 +45,7 @@ nav > ul > li > a {
     padding-left: 20px;
     padding-bottom: 10px;
     padding-top: 50px;
+    margin-bottom: 10px;
 }
 
 .menu__liste--ligne{
@@ -61,4 +62,8 @@ nav > ul > li > a {
     font-size: var(--menu-h2);
     padding-left: 80px;
     padding-bottom: 10px;
+}
+
+.menu__lien--principal{
+    border-bottom: 1px solid white;
 }
