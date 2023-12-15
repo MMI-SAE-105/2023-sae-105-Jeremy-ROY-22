@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Andreu Vision</title>
+        <link rel="stylesheet" href="/src/styles.css" />
+        <script src="https://unpkg.com/alpinejs" defer></script>
+    </head>
+    <body x-data="{expanded: false}" :class="{noscroll: expanded}">
+
+        <header class="header">
+            <div class="header__site">
+                <a href="/fr/index.html" class="header__site--nom">
+                    Andreu Vision
+                </a>
+            </div>
+            <div class="header__menu">
+                <img 
+                    class="header__menu--icone"
+                    src="/public/icones/menu.svg"  
+                    alt="logo menu burger"
+                    @click="expanded = ! expanded">
+                <nav class="header__menu menu" :class="{actif: expanded}">
+                    <div class="menu__haut">
+                        <a href="/fr/index.html" class="menu__site">
+                            Andreu Vision
+                        </a>
+                        <img 
+                            class="menu__croix" 
+                            src="/public/icones/croix.svg" 
+                            alt="icone croix fermeture menu"
+                            @click="expanded = ! expanded">
+
+                    </div>
+                    <a href="/en/index.html" class="menu__lang">EN</a>
+
+                    <ul class="menu__liste">
+                        <li class="menu__principal">
+                            <a 
+                                href="/fr/informations.html"
+                                class="menu__lien--principal">
+                                Informations
+                            </a>
+                        </li>
+                        <li class="menu__ancre">
+                            <a 
+                                class="menu__ancre--lien"
+                                href="/fr/informations.html#horaires">
+                               Horaires 
+                            </a>
+                        </li>
+                        <li class="menu__ancre">
+                            <a 
+                                href="/fr/informations.html#tarifs"
+                                class="menu__ancre--lien">
+                                Tarifs
+                            </a>
+                        </li>
+                        <li class="menu__ancre">
+                            <a 
+                                href="/fr/informations.html#lieu"
+                                class="menu__ancre--lien">
+                                Lieu
+                            </a>
+                        </li>
+                        <li class="menu__principal">
+                            <a 
+                                href="/fr/paulandreu.html"
+                                class="menu__lien--principal">
+                                Paul Andreu
+                            </a>
+                        </li>
+                        <li class="menu__ancre">
+                            <a 
+                                href="/fr/paulandreu.html#biographie"
+                                class="menu__ancre--lien">
+                                Biographie
+                            </a>
+                        </li>
+                        <li class="menu__ancre">
+                            <a 
+                                href="/fr/paulandreu.html#oeuvres"
+                                class="menu__ancre--lien">
+                                Oeuvres
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
+
+        </header>
+
+
+        <main class="main">
+            <header class="main__header">
+                <img 
+                    class="main__header--image"
+                    src="/public/img/fondation_cartier.png" 
+                    alt="image fondation Cartier"
+                >
+                <h1 class="main__header--titre">
+                    Aéroport Charles deGaulle
+                </h1>
+            </header>
+
+            <article class="bloc">
+                <img 
+                    class="bloc__image"
+                    src="/public/img/oeuvre3.webp" 
+                    alt="photo maritime osaka">
+                <p class="bloc__text">
+                    Inauguré en 1974, l'Aéroport Charles de Gaulle à Paris tire son nom du célèbre homme d'État français. Conçu par l'architecte 
+                    Paul Andreu, cet aéroport majeur a été créé pour répondre à la croissance du trafic aérien international et devenir un hub mondial. 
+                    Depuis ses débuts, il a joué un rôle essentiel dans la connectivité mondiale, accueillant des millions de voyageurs et contribuant 
+                    à façonner le paysage aéroportuaire mondial. 
+                </p>               
+                <img 
+                    class="bloc__image"
+                    src="/public/img/osaka_museum1.webp" 
+                    alt="photo maritime osaka">
+                <p class="bloc__text">
+                    L'architecture distinctive de l'Aéroport Charles de Gaulle reflète le génie créatif de Paul Andreu. Le terminal central, 
+                    avec son toit en forme de vagues, est un exemple audacieux d'esthétique moderne et fonctionnelle. 
+                    Les lignes fluides et l'espace ouvert créent une atmosphère accueillante, tandis que la disposition ingénieuse facilite la circulation des passagers. 
+                    L'aéroport combine ainsi l'efficacité logistique avec une conception architecturale novatrice, en faisant bien plus qu'un simple lieu de transit, 
+                    mais une expérience visuelle mémorable.  
+                </p>              
+                <img 
+                    class="bloc__image"
+                    src="/public/img/osaka_museum2.webp" 
+                    alt="photo maritime osaka">
+            </article>
+
+
+        </main>
+
+
+        <footer class="footer">
+            <a 
+                class="footer__nom"
+                href="/fr/index.html"
+                >
+                    Andreu Vision
+            </a>
+            <div class="footer__infos">
+                <a 
+                    class="footer__infos--lien"
+                    href="/fr/informations.html#horaires">
+                    Horaires
+                </a>
+                <a 
+                    class="footer__infos--lien"
+                    href="/fr/informations.html#tarifs">
+                    Tarifs
+                </a>
+                <a 
+                    class="footer__infos--lien"
+                    href="/fr/informations.html#lieu">
+                    Lieu
+                </a>                
+            </div>
+
+            <hr class="footer__ligne">
+
+            <div class="footer__oeuvre">
+                <a 
+                    class="footer__oeuvre--lien"
+                    href="/fr/paulandreu.html#oeuvres">
+                    Oeuvres
+                </a>
+                <a class="footer__oeuvre--lien" href="/fr/galerie.html">
+                    Galerie
+                </a>
+            </div>
+
+            <hr class="footer__ligne">
+
+            <div class="footer__contact">
+                <a 
+                    class="footer__contact--lien"
+                    href="/fr/contact.html">
+                    Contact
+                </a>
+            </div>
+
+            <hr class="footer__ligne">
+
+            <div class="footer__reseaux">
+                <a 
+                    class="footer__reseaux--lien"
+                    href="https://www.instagram.com/fondationcartier/?hl=fr">
+                    <img src="/public/icones/instagram.svg" alt="logo instagram">
+                </a>
+                <a 
+                    class="footer__reseaux--lien"
+                    href="https://www.facebook.com/FondationCartier/?locale=fr_FR">
+                    <img src="/public/icones/facebook.svg" alt="logo facebook">
+                </a>
+                <a 
+                    class="footer__reseaux--lien"
+                    href="https://www.youtube.com/user/fondationcartier">
+                    <img src="/public/icones/youtube.svg" alt="logo youtube">
+                </a>
+            </div>
+        </footer>
+    
+    </body>
+</html>
