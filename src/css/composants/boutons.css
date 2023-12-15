@@ -8,6 +8,7 @@
     border-width: 1px;
     border-radius: 5px;
     padding: 5px;
+    margin: 20px;
 }
 
 .bloc__accordeon--btn, .carrousel__ecran--btn{
