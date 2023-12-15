@@ -151,9 +151,12 @@
                         class="carrousel_btn carrousel_btn-apres" 
                         aria-label="slide suivant"
                         @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">
-                        &gt;
+                        &gt; 
                     </button>
-                    <div class="carrousel__parent--ecrans">
+                    <div 
+                        class="carrousel__parent--ecrans"
+                        @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id"
+                        >
                         
                         <div id="ecran-1" class="carrousel__ecran">
                             <figure class="fig">
