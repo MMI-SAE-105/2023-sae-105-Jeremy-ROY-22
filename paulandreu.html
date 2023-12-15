@@ -154,6 +154,7 @@
                     </button>
                     <div 
                         class="carrousel__parent--ecrans"
+                        x-ref="parent"
                         @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id"
                         >
                         
