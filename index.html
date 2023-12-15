@@ -8,7 +8,7 @@
         <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body>
+<body x-data="{expanded: false}" :class="{noscroll: expanded}">
     <header class="header">
         <div class="header__site">
             <a href="/" class="header__site--nom">
@@ -184,4 +184,4 @@
         </footer>
     </body>
 </html>
-
+

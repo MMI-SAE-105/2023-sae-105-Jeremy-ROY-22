@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="/src/styles.css" />
         <script src="https://unpkg.com/alpinejs" defer></script>
     </head>
-    <body x-data="{expanded: false}">
+    <body x-data="{expanded: false}" :class="{noscroll: expanded}">
 
         <header class="header">
             <div class="header__site">
