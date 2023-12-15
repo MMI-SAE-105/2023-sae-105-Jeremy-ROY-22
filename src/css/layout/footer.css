@@ -1,6 +1,6 @@
 .footer{
     background-color: var(--gris);
-    
+    width: 100%;
 }
 
 .footer__nom{
@@ -35,4 +35,13 @@
 
 .footer__reseaux--logo{
     width: 100%;
+}
+
+.footer__ligne{
+    border-color: white;
+    color: white;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 120px;
 }
