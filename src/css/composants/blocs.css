@@ -26,3 +26,8 @@
 .bloc__citation{
     padding-top: 20px;
 }
+
+.bloc__carte{
+    width: 100%;
+    height: 350px;
+}
