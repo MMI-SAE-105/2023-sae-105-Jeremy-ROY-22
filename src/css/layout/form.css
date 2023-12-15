@@ -1,0 +1,36 @@
+.form{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.bloc__text--contact{
+
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.form__element{
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.form__element--input{
+    border: none;
+    height: 30px;
+    padding-left: 10px;
+    background-color: rgba(217, 217, 217);
+}
+
+.message{
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.form__element--bouton{
+    background-color: var(--bleu-clair);
+    border: none;
+    border-color: black solid 1px;
+    padding: 5px;
+    border-radius: 5px;
+}
