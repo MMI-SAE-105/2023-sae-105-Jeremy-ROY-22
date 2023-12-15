@@ -67,3 +67,7 @@ nav > ul > li > a {
 .menu__lien--principal{
     border-bottom: 1px solid white;
 }
+
+.noscroll{
+    overflow: hidden;
+}
