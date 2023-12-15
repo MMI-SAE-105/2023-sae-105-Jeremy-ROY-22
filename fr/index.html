@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Andreu Vision</title>
+        <link rel="stylesheet" href="/src/styles.css" />
+        <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>    </head>
+    
+    
+        <body x-data="{expanded: false}">
+
+        <header class="header">
+            <div class="header__site">
+                <a href="/" class="header__site--nom">
+                    Andreu Vision
+                </a>
+            </div>
+            <div class="header__menu">
+                <img 
+                    class="header__menu--icone"
+                    src="/public/icones/menu.svg"  
+                    alt="logo menu burger"
+                    @click="expanded = ! expanded">
+                <nav class="header__menu menu" :class="{actif: expanded}">
+                    <div class="menu__haut">
+                        <a href="/" class="menu__site">
+                            Andreu Vision
+                        </a>
+                        <img 
+                            class="menu__croix" 
+                            src="/public/icones/croix.svg" 
+                            alt="icone croix fermeture menu"
+                            @click="expanded = ! expanded">
+
+                    </div>
+                    
+                    <ul class="menu__liste">
+                        <li class="menu__principal">
+                            <a 
+                                href="/informations.html"
+                                class="menu__lien--principal">
+                                Informations
+                            </a>
+                        </li>
+                        <li class="menu__ancre">
+                            <a 
+                                class="menu__ancre--lien"
+                                href="/informations.html#horaires">
+                               Horaires 
+                            </a>
+                        </li>
+                        <li class="menu__ancre">
+                            <a 
+                                href="/informations.html#tarifs"
+                                class="menu__ancre--lien">
+                                Tarifs
+                            </a>
+                        </li>
+                        <li class="menu__ancre">
+                            <a 
+                                href="/informations.html#lieu"
+                                class="menu__ancre--lien">
+                                Lieu
+                            </a>
+                        </li>
+                        <li class="menu__principal">
+                            <a 
+                                href="/paulandreu.html"
+                                class="menu__lien--principal">
+                                Paul Andreu
+                            </a>
+                        </li>
+                        <li class="menu__ancre">
+                            <a 
+                                href="/paulandreu.html#biographie"
+                                class="menu__ancre--lien">
+                                Biographie
+                            </a>
+                        </li>
+                        <li class="menu__ancre">
+                            <a 
+                                href="/paulandreu.html#oeuvres"
+                                class="menu__ancre--lien">
+                                Oeuvres
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
+
+        </header>
+
+
+        <main class="main">
+            <header class="main__header">
+                <img 
+                    class="main__header--image"
+                    src="/public/img/fondation_cartier.png" 
+                    alt="image fondation Cartier"
+                >
+                <h1 class="main__header--titre">
+                    L’exposition Paul Andreu
+                </h1>
+            </header>
+            
+            <article class="bloc">
+                <h2 class="bloc__titre">
+                    DU 13 AVRIL AU 23 JUIN
+                </h2>
+                <p class="bloc__text">
+                    Venez découvrir l’exposition Paul Andreu, et parcourez l’histoire et les œuvres d’un des plus grands architecte Français à renommée mondial à la Fondation Cartier
+                </p>
+                <img 
+                    class="bloc__image"
+                    src="/public/img/paul_a.webp" 
+                    alt="photo paul andreu">
+                <p class="bloc__text">
+                    Toutes les infos nécessaires sur l’exposition ici :
+                </p>
+                    <a href="/informations.html" class="bloc__btn">
+                        Informations
+                    </a>
+            </article>
+            <article class="bloc">
+                <h2 class="bloc__titre">
+                    Paul Andreu
+                </h2>
+                <p class="bloc__text">
+                    Découvrez en plus sur l’architecte derrière les bâtiments les plus connus, théâtres, aéroports, musées...                
+                </p>
+                    <a href="/paulandreu.html" class="bloc__btn">
+                        Qui est-il ?
+                    </a>
+                <img 
+                    class="bloc__image"
+                    src="/public/img/oeuvre2.webp" 
+                    alt="photo arche de la defence">
+            </article>
+        </main>
+
+
+        <footer class="footer">
+            <a 
+                class="footer__nom"
+                href="/">
+                    Andreu Vision
+                
+            </a>
+            <div class="footer__infos">
+                <a 
+                    class="footer__infos--lien"
+                    href="/informations.html#horaires">
+                    Horaires
+                </a>
+                <a 
+                    class="footer__infos--lien"
+                    href="/informations.html#tarifs">
+                    Tarifs
+                </a>
+                <a 
+                    class="footer__infos--lien"
+                    href="/informations.html#lieu">
+                    Lieu
+                </a>                
+            </div>
+
+            <hr class="menu__liste--ligne">
+            <div class="footer__oeuvre">
+                <a 
+                    class="footer__oeuvre--lien"
+                    href="/paulandreu.html#oeuvres">
+                    Oeuvres
+                </a>
+                <a class="footer__oeuvre--lien" href="/galerie.html">
+                    Galerie
+                </a>
+            </div>
+
+            <hr class="menu__liste--ligne">
+            <div class="footer__contact">
+                <a 
+                    class="footer__contact--lien"
+                    href="/contact.html">
+                    Contact
+                </a>
+            </div>
+
+            <hr class="menu__liste--ligne">
+
+            <div class="footer__reseaux">
+                <a 
+                    class="footer__reseaux--lien"
+                    href="https://www.instagram.com/fondationcartier/?hl=fr">
+                    <img class="footer__reseaux--logo" src="/public/icones/instagram.svg" alt="logo instagram">
+                </a>
+                <a 
+                    class="footer__reseaux--lien"
+                    href="https://www.facebook.com/FondationCartier/?locale=fr_FR">
+                    <img class="footer__reseaux--logo" src="/public/icones/facebook.svg" alt="logo facebook">
+                </a>
+                <a 
+                    class="footer__reseaux--lien"
+                    href="https://www.youtube.com/user/fondationcartier">
+                    <img class="footer__reseaux--logo" src="/public/icones/youtube.svg" alt="logo youtube">
+                </a>
+            </div>
+        </footer>
+    
+    </body>
+</html>
